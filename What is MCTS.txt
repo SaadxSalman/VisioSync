@@ -1,1 +1,0 @@
-Monte Carlo Tree Search (MCTS) is a search algorithm that builds a decision tree through iterative simulations, balancing exploration of new possibilities with exploitation of known successful strategies. It is particularly effective in complex and strategic environments where traditional methods may falter.
