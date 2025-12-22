@@ -14,12 +14,15 @@ A next-generation conversational agent that goes beyond text and audio to create
 
 -----
 
-## ⚙️ Tech Stack
+## 💻 Tech Stack (MERN)
 
-  * **Frontend:** [Next.js](https://nextjs.org/)
-  * **Communication:** tRPC
-  * **Core Model:** A massive multimodal model
-  * **Multi-modal Fusion:** [VideoMAE-v2](https://github.com/OpenGVLab/VideoMAEv2) and [AudioCLIP](https://www.google.com/search?q=https://github.com/AndrasDeak/AudioCLIP)
+* **Frontend:** [Next.js](https://nextjs.org/) (React)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Backend:** [Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/)
+* **Database:** [MongoDB](https://www.mongodb.com/)
+* **Communication:** tRPC
+* **Core Model:** A massive multimodal model
 
 -----
 
