@@ -91,4 +91,61 @@ Run the Next.js server and the backend services to start the agent. You can then
 
 -----
 
+Here is the comprehensive file structure for **Persona-Agent**. This structure follows a **Monorepo** pattern, which is the industry standard for projects requiring tight integration between a Next.js frontend, a Node.js backend, and specialized AI microservices.
 
+### 📂 Project Structure
+
+```text
+Persona-Agent/
+├── apps/
+│   ├── web/                        # FRONTEND (Next.js)
+│   │   ├── public/
+│   │   │   └── models/
+│   │   │       └── avatar.glb      # 3D Avatar assets
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   │   ├── layout.tsx      # Root layout & Providers
+│   │   │   │   └── page.tsx        # Main UI (Tailwind Layout)
+│   │   │   ├── components/
+│   │   │   │   ├── Avatar/
+│   │   │   │   │   └── DigitalHuman.tsx # Three.js Synthesis Agent
+│   │   │   │   └── PersonaClient.tsx    # Webcam & tRPC Logic
+│   │   │   ├── hooks/
+│   │   │   │   └── useWebcam.ts    # Stream management hook
+│   │   │   └── utils/
+│   │   │       └── trpc.ts         # tRPC Client setup
+│   │   ├── next.config.js
+│   │   ├── tailwind.config.js
+│   │   └── package.json
+│   │
+│   └── server/                     # BACKEND (Node/Express)
+│       ├── src/
+│       │   ├── models/
+│       │   │   └── Interaction.ts  # MongoDB Schema
+│       │   ├── services/
+│       │   │   └── ai.service.ts   # Axios calls to FastAPI
+│       │   ├── trpc/
+│       │   │   ├── router.ts       # Main API Router
+│       │   │   └── context.ts      # Auth/DB context
+│       │   └── index.ts            # Server Entry Point
+│       ├── .env                    # DB and API Keys
+│       ├── tsconfig.json
+│       └── package.json
+│
+├── services/
+│   └── inference/                  # AI ENGINE (Python)
+│       ├── models/                 # Weight files (VideoMAE-v2, etc.)
+│       ├── main.py                 # FastAPI Server
+│       ├── processors/
+│       │   ├── video.py            # VideoMAE logic
+│       │   └── audio.py            # AudioCLIP logic
+│       ├── Dockerfile              # PyTorch/CUDA environment
+│       └── requirements.txt        # Python dependencies
+│
+├── docker-compose.yml              # Orchestrates Mongo + AI Engine
+├── package.json                    # Root workspace config
+└── README.md
+
+```
+
+---
