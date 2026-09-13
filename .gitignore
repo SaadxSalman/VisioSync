@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+.python-version
+uploads/
+data/
+artifacts/
+.pytest_cache/
+.DS_Store
