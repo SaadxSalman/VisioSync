@@ -316,4 +316,4 @@ The MIT License applies to the original source code in this repository. It does 
 
 The project contains no rights to engineering manuals or other documents uploaded by users. Uploaded documents remain the responsibility of the deploying organization and may be proprietary, confidential, export-controlled, or subject to contractual retention rules. Do not commit real manuals, rendered customer pages, API keys, production database files, or other sensitive material to Git.
 
-Before operating VisioSync with real engineering data, define the required authentication, authorization, encryption, retention, deletion, audit, and incident-response policies for your organization. The reference application provides an implementation foundation, not legal advice or a complete compliance program..
+Before operating VisioSync with real engineering data, define the required authentication, authorization, encryption, retention, deletion, audit, and incident-response policies for your organization. The reference application provides an implementation foundation, not legal advice or a complete compliance program.
